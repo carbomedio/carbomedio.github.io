@@ -5,14 +5,15 @@ $primary2: #160e0b;
 $bgColor:#f9fafa;
 
 // import fonts
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @mixin main-font {
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 
 @mixin secondary-font {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
