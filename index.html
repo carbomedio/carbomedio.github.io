@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbomedio</title>
+  
+  <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .fullscreen-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .fullscreen-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-container {
+        position: absolute;
+        top: 50%;
+        left: 10%; /* Adjust as needed */
+        transform: translateY(-50%);
+        z-index: 1;
+        color: white; /* Text color */
+    }
+
+    .text {
+        font-size: 24px; /* Adjust font size as needed */
+        font-family: Arial, sans-serif; /* Adjust font family as needed */
+    }
+
+    /* New section styles */
+    .section {
+        background-color: lightblue;
+        height: 100vh; /* Full viewport height */
+        display: none; /* Initially hidden */
+        text-align: center;
+    }
+  </style>
+</head>
+  
+<body>
+    <div class="fullscreen-bg">
+        <img src="assets/background.jpg" alt="">
+    </div>
+
+    <div class="text-container">
+        <h1 class="text">Carbomedio</h1>
+        <h3 class="text">F1 in Schools Team</h3>
+    </div>
+
+    <!-- New section -->
+    <div class="section">
+        <p>Contact Us</p>
+    </div>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var section = document.querySelector('.section');
+        var topPosition = section.getBoundingClientRect().top;
+
+        if (topPosition < window.innerHeight * 0.75) {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
