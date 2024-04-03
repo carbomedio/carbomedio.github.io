@@ -4,7 +4,7 @@ body, html {
         height: 100%;
         font-family: "Outfit", sans-serif;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 24px;
         color: #e8e9ec;
 }
 
@@ -35,13 +35,13 @@ body, html {
     h1 {
         font-family: "Outfit", sans-serif;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 48px;
     }
 
     h2 {
         font-family: "Outfit", sans-serif;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 40px;
     }
 
     /* New section styles */
