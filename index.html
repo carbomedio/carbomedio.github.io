@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"/>
+  <script src="https://kit.fontawesome.com/e67134f8d2.js" crossorigin="anonymous"></script>
+  
   <title>Carbomedio</title>
   
   <style>
+    
     body, html {
         margin: 0;
         padding: 0;
@@ -46,16 +49,14 @@
     /* New section styles */
     .section {
         background-color: lightblue;
-        height: 100vh; /* Full viewport height */
-        display: none; /* Initially hidden */
+        padding: 50px;
         text-align: center;
     }
   </style>
 </head>
-  
 <body>
     <div class="fullscreen-bg">
-        <img src="./assets/background.jpg" alt="">
+        <img src="your-image-url.jpg" alt="Full Screen Image">
     </div>
 
     <div class="text-container">
@@ -68,17 +69,7 @@
         <p>Contact Us</p>
     </div>
 
-<script>
-    window.addEventListener('scroll', function() {
-        var section = document.querySelector('.section');
-        var topPosition = section.getBoundingClientRect().top;
+    <!-- More sections can be added similarly -->
 
-        if (topPosition < window.innerHeight * 0.75) {
-            section.style.display = 'block';
-        } else {
-            section.style.display = 'none';
-        }
-    });
-</script>
 </body>
 </html>
