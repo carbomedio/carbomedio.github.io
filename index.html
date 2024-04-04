@@ -47,16 +47,6 @@
         max-width: 60%; /* Set maximum width to 50% of the viewport width */
     }
 
-    .smaller-section {
-        width: 100%;
-        background-color: #0072b8;
-        padding: 20px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between; /* Spread items apart */
-        align-items: center; /* Align items to the center vertically */
-    }
-
     .social-icons a {
         margin-left: 20px; /* Adjust the margin between the social icons */
         font-size: 28px;
@@ -85,10 +75,20 @@
         color: #e8e9ec;
     }
 
+    .smaller-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #0072b8;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
     .middle-text {
         flex-grow: 1;
         text-align: center;
-        font-size: 24px;
+        color: #e8e9ec; /* Set the color of the middle text */
     }
 </style>
 </head>
@@ -102,8 +102,8 @@
 </div>
 
 <div class="smaller-section">
-  <div class="middle-text">©2024 Carbomedio - All rights reserved.</div>
   <a href="mailto:info@carbomedio.pt">Contact Us</a>
+  <div class="middle-text">Middle Text Here</div>
   <div class="social-icons">
     <a href="https://instagram.com/carbomedio" target="_blank"><i class="fab fa-instagram"></i></a>
     <a href="https://twitter.com/carbomedio" target="_blank"><i class="fab fa-twitter"></i></a>
